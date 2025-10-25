@@ -104,14 +104,14 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     };
 
     // Send the email
-    emailjs.send('default_service', 'YOUR_TEMPLATE_ID', templateParams)
+    emailjs.send('service_dxbls9l', 'template_pdi1yzc', templateParams)
         .then(function() {
             // Show success message
             document.getElementById('success-message').style.display = 'block';
             
             // Reset the form
             document.getElementById('contact-form').reset();
-            
+            grecaptcha.reset();
             // Hide success message after 5 seconds
             setTimeout(() => {
                 document.getElementById('success-message').style.display = 'none';
