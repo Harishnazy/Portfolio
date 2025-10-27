@@ -480,6 +480,7 @@ a, button, input, textarea {
 .github-link {
     color: #fff;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 /* Contact Section */
